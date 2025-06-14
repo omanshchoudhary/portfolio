@@ -1,0 +1,20 @@
+body {
+  background-color: #181818;
+  color: #f5f5f5; /* Off-white (smoke white) for text */
+ 
+}
+
+.main-body {
+  
+  max-width: 850px;
+  margin: 0 auto; /* Centers the container horizontally */
+  
+}
+
+p {
+  margin: 0;
+}
+
+div{
+  margin: 0;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Omansh Choudhary</title>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="middle.css" />
+    <link rel="icon" type="image/x-icon" href="/pics/browser.png" />
+  </head>
+
+  <body>
+    <div class="main-body">
+      <div class="header1">
+        <div class="real-time" id="current-time"></div>
+
+        <div>
+          <p class="tagline">Hustle | Loyalty | Respect</p>
+        </div>
+      </div>
+
+      <div class="header2">
+        <div class="pic">
+          <img
+            class="profile-pic"
+            src="pics/HD-wallpaper-tyson-granger-wiki-beyblade-g-revolution.jpg"
+          />
+        </div>
+
+        <div>
+          <div class="name-headline">
+            <p class="name">Omansh Choudhary</p>
+            <p class="tag">Software Developer</p>
+            <div class="icons-bar">
+              <a href="https://x.com/_royalcoder" target="_blank">
+                <img class="icon-style" src="icons-tech/twitter.png" />
+              </a>
+
+              <a href="https://github.com/omanshchoudhary" target="_blank">
+                <img class="icon-style" src="icons-tech/github.png" />
+              </a>
+
+              <a href="https://www.linkedin.com/in/omanshchoudhary/" target="_blank">
+                <img class="icon-style" src="icons-tech/linkedin.png" />
+              </a>
+
+              <a href="mailto:omansh.choudhary@gmail.com" target="_blank">
+                <img
+                  class="icon-style"
+                  src="icons-tech/gmail.png"
+                  alt="Gmail"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-div">
+        <p class="about-header">About Me</p>
+        <p class="about-content">
+          Hey, I'm Omansh — a Computer Science student at VIT Vellore. I breathe
+          C++, live in DSA, and build things that make sense. Right now, I'm
+          deep-diving into algorithms, sharpening my problem-solving edge, and
+          exploring the dev side — one project, one push at a time. Whether it's
+          back-end logic or front-end finesse, I love crafting clean, efficient
+          solutions. This portfolio? Just a glimpse of what I'm building next.
+        </p>
+      </div>
+
+      <div class="skillsTools-div">
+        <p class="skillTools-header">Skills And Tools</p>
+        <div class="skillsTools-grid">
+          <button class="skill-btn">DSA</button>
+          <button class="skill-btn">C++</button>
+          <button class="skill-btn">C</button>
+          <button class="skill-btn">Python</button>
+          <button class="skill-btn">OOPS</button>
+          <button class="skill-btn">HTML</button>
+          <button class="skill-btn">CSS</button>
+          <button class="skill-btn">JavaScript</button>
+          <button class="skill-btn">Git</button>
+          <button class="skill-btn">GitHub</button>
+        </div>
+      </div>
+
+      <div class="education-div">
+        <p class="education-header">Education</p>
+        <p class="education-content">
+          
+          B.Tech in Computer Science, VIT Vellore<br />
+          2024 - 2028<br />
+          CGPA: 9.62
+        </p>
+      </div>
+
+      <footer style="text-align:center; margin-top:40px; color:#888; font-size:0.95rem; padding-bottom:18px;">
+        &copy; 2025 Omansh Choudhary. All rights reserved.
+      </footer>
+    </div>
+
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        document.getElementById("current-time").textContent = timeString;
+      }
+      setInterval(updateTime, 1000);
+      updateTime();
+    </script>
+  </body>
+</html>

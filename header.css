@@ -1,0 +1,117 @@
+.header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  border-color: #444;
+  border-width: 2px;
+  border-radius: 9px;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 13px;
+
+}
+
+.header2 {
+  border-style: solid;
+  border-color: #444;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  min-height: 248px;
+  vertical-align: center;
+  background: #181818;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  border-width: 2px;
+}
+
+.tagline {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.profile-pic {
+  height: 210px;
+  width: 220px;
+  border: 4px solid #444;
+  border-radius: 24px; /* More pronounced curve */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  background: #222; /* Subtle background for theme match */
+  padding: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.profile-pic:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  transform: scale(1.03);
+  
+}
+
+
+.name-headline {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 160px;
+  top: 19px;
+  bottom: 10px;
+  
+  
+}
+
+
+
+.pic {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 40px;
+  height: 218px;
+ 
+}
+
+.name {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+
+.tag {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+
+.email{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.icon-style {
+  height: 34px;
+  width: 34px;
+  background: #222;         /* Subtle dark background */
+  border-radius: 8px;       /* Rounded corners */
+  padding: 6px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+.icon-style:hover {
+  background: #444;         /* Lighter background on hover */
+  transform: translateY(-2px) scale(1.08); /* Slight lift and scale */
+}
+
+
+.icons-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;                /* Space between icons */
+  margin-top: 10px;
+}
