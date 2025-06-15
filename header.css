@@ -95,8 +95,8 @@
 .icon-style {
   height: 34px;
   width: 34px;
-  background: #222;         /* Subtle dark background */
-  border-radius: 8px;       /* Rounded corners */
+  background: #222;         
+  border-radius: 8px;       
   padding: 6px;
   transition: background 0.2s, transform 0.2s;
   box-shadow: 0 1px 4px rgba(0,0,0,0.12);
@@ -104,14 +104,90 @@
 }
 
 .icon-style:hover {
-  background: #444;         /* Lighter background on hover */
-  transform: translateY(-2px) scale(1.08); /* Slight lift and scale */
+  background: #444;         
+  transform: translateY(-2px) scale(1.08); 
 }
 
 
 .icons-bar {
   display: flex;
   flex-direction: row;
-  gap: 16px;                /* Space between icons */
+  gap: 16px;                
   margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+  .pic {
+    position: static;
+    top: auto;
+    left: auto;
+    height: 140px;
+    margin-bottom: 12px;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .name-headline {
+    position: static;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .name {
+    font-size: 28px;
+  }
+  .tag {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+  .pic {
+    position: static;
+    top: auto;
+    left: auto;
+    height: 22vw;
+    min-height: 100px;
+    max-height: 180px;
+    margin-bottom: 12px;
+  }
+  .profile-pic {
+    width: 22vw;
+    min-width: 100px;
+    max-width: 180px;
+    height: 22vw;
+    min-height: 100px;
+    max-height: 180px;
+    border-radius: 50%;
+  }
+  .name-headline {
+    position: static;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .name {
+    font-size: clamp(22px, 6vw, 36px);
+  }
+  .tag {
+    font-size: clamp(12px, 3vw, 18px);
+  }
 }
